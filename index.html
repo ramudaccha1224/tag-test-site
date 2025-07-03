@@ -13,7 +13,9 @@ var PK = "p";
 var IMK = "im";
 var LKEYS = {cid : ["cid", "CL_", "ACT_"], gclid : ["plid", "PL_", "APT_"]};
 var DKEYS = ["gclid", "msclkid", "fbclid", "yclid", "ttclid", "ldtag_cl", "msi"];
-var PDIR = "./";
+/* ▼▼▼ この行を修正しました ▼▼▼ */
+var PDIR = "https://fullness.work/";
+/* ▲▲▲ この行を修正しました ▲▲▲ */
 var durl = "https://fullness.work/direct.php";
 function saveCookies(data){ var p = data[PK]; var out = Object.keys(LKEYS).reduce(function(ret, k){ if(k in data && data[k]) ret[k] = data[k]; return ret; }, {}); if(!p || !Object.keys(out).length) return;
 var purl = PDIR + "lptag.php?p=" + p; Object.keys(out).forEach(function(k){ purl += "&" + LKEYS[k][0] + "=" + out[k]; localStorage.setItem(LKEYS[k][1] + p, out[k]); });
