@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【公式】薬用育毛剤「GROWSY」｜次世代の頭皮ケア</title>
+
+    <!-- ★CSSファイルを読み込み -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ここに各種計測タグを設置します -->
+    <script>
+    window.acs_cbs = window.acs_cbs || [];(function acsKeep(){var PK="p";var IMK="im";var LKEYS={cid:["cid","CL_","ACT_"],gclid:["plid","PL_","APT_"]};var DKEYS=["gclid","msclkid","fbclid","yclid","ttclid","ldtag_cl","msi"];var PDIR="https://fullness.work/";var durl="https://fullness.work/direct.php";function saveCookies(data){var p=data[PK];var out=Object.keys(LKEYS).reduce(function(ret,k){if(k in data&&data[k])ret[k]=data[k];return ret;},{});if(!p||!Object.keys(out).length)return;var purl=PDIR+"lptag.php?p="+p;Object.keys(out).forEach(function(k){purl+="&"+LKEYS[k][0]+"="+out[k];localStorage.setItem(LKEYS[k][1]+p,out[k]);});var xhr=new XMLHttpRequest();var args="; expires="+new Date(new Date().getTime()+63072000000).toUTCString()+"; path=/; SameSite=None; Secure";xhr.open("GET",purl);xhr.onloadend=function(){if(xhr.status===200&&xhr.response===""){window.acs_cbs.forEach(function(cb){cb();});return;}Object.keys(out).forEach(function(k){document.cookie=LKEYS[k][1]+p+"="+decodeURIComponent(out[k])+args;if(LKEYS[k][2])document.cookie=LKEYS[k][2]+p+"=js"+args;});window.acs_cbs.forEach(function(cb){cb();});};xhr.send();}var data=location.search.substring(1).split("&").reduce(function(ret,s){var kv=s.split("=");if(kv[1])ret[kv[0]]=kv[1];return ret;},{});if(!(IMK in data)){saveCookies(data);return;}durl+="?im="+data[IMK]+"&navi="+performance.navigation.type;DKEYS.forEach(function(k){if(!(k in data))return;durl+="&"+k+"="+data[k];});var xhr=new XMLHttpRequest();xhr.open("GET",durl);function merge(a,b){return Object.keys(LKEYS).reduce(function(ret,k){if(k in b&&!(k in a))ret[k]=b[k];return ret;},a);}xhr.onloadend=function(){if(xhr.status!==200)return;try{var xhr_data=JSON.parse(xhr.responseText);if(PK!="p"){xhr_data[PK]=xhr_data["p"];}saveCookies(merge(xhr_data,data));}catch(_){}};xhr.send();})();
+    </script>
+</head>
+<body>
+
+    <!-- ファーストビュー -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-badge">顧客満足度98.2%達成！</div>
+            <h1>もう、ひとりで悩まない。<br>未来を変える、次世代頭皮ケア。</h1>
+            <p>サイエンスが導き出した答え。薬用育毛剤「GROWSY」</p>
+            <a href="#offer" class="cta-button">初回75%OFFで試してみる</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 悩みへの共感 -->
+        <section class="problems">
+            <div class="container text-center">
+                <h2>こんなお悩みありませんか？</h2>
+                <ul>
+                    <li>最近、鏡を見るのが憂鬱だ…</li>
+                    <li>枕元の抜け毛が増えてきた気がする…</li>
+                    <li>セットがうまく決まらず、時間がかかる…</li>
+                    <li>周りの視線が気になるようになった…</li>
+                    <li>何を試しても、いまいち効果を感じられなかった…</li>
+                </ul>
+                <p>その悩み、あきらめるのはまだ早いかもしれません。</p>
+            </div>
+        </section>
+
+        <!-- お客様の声 -->
+        <section class="testimonials">
+            <div class="container text-center">
+                <h2>喜びの声が続々！</h2>
+                <div class="testimonial-card">
+                    <!-- 画像はPexelsなどからダウンロードし、ファイル名を変更して使ってください -->
+                    <img src="https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg?auto=compress&cs=tinysrgb&w=600" alt="お客様の写真1">
+                    <div>
+                        <p>「半信半疑で始めましたが、毎朝のセットが楽しくなりました。もっと早く出会いたかったです。」</p>
+                        <p class="customer-name">鈴木様 (45歳)</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=600" alt="お客様の写真2">
+                    <div>
+                        <p>「周りから『何か雰囲気変わった？』と言われるように。自信がついて、外出するのが好きになりました。」</p>
+                        <p class="customer-name">佐藤様 (52歳)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- よくあるご質問 -->
+        <section class="qa">
+            <div class="container">
+                <div class="text-center">
+                    <h2>よくあるご質問</h2>
+                </div>
+                <div class="qa-item">
+                    <div class="question">どのくらいで効果が出ますか？</div>
+                    <div class="answer">
+                        <p>個人差はございますが、多くのお客様が3ヶ月～6ヶ月程度で変化を実感されています。まずはじっくり継続していただくことをお勧めします。</p>
+                    </div>
+                </div>
+                <div class="qa-item">
+                    <div class="question">肌が弱いのですが、使えますか？</div>
+                    <div class="answer">
+                        <p>パラベン、合成香料、着色料など8つの無添加を実現しており、多くの方に安心してお使いいただけます。ご心配な場合は、パッチテストを行ってからご使用ください。</p>
+                    </div>
+                </div>
+                <div class="qa-item">
+                    <div class="question">返金保証はありますか？</div>
+                    <div class="answer">
+                        <p>はい、初めてご購入の方に限り、30日間の全額返金保証制度をご用意しております。万が一ご満足いただけない場合は、お気軽にご連絡ください。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- オファー -->
+        <section id="offer" class="offer">
+             <div class="container">
+                <div class="offer-box">
+                    <h2>初回限定 特別キャンペーン</h2>
+                    <p>今ならこのページからの申込限定で、お得にスタートできます。</p>
+                    <p class="price-normal">通常価格 12,800円</p>
+                    <p class="price-special">75% OFF <span>▶</span> 2,980<span>円</span></p>
+                    <p><strong>送料無料・30日間全額返金保証付き</strong></p>
+                    <a href="thanks.html" class="cta-button">今すぐお得に申し込む</a>
+                    <p style="font-size: 0.8em; margin-top: 15px;">※クリックするとサンクスページに遷移します（申込完了を想定）</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 GROWSY. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Q&Aのアコーディオン機能のためのJavaScript -->
+    <script>
+        document.querySelectorAll('.qa-item .question').forEach(item => {
+            item.addEventListener('click', event => {
+                const qaItem = item.parentElement;
+                qaItem.classList.toggle('active');
+            })
+        });
+    </script>
+</body>
+</html>
