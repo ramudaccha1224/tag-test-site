@@ -8,15 +8,21 @@
     <!-- ここに各種計測タグ（GTMのheadタグなど）を設置します -->
     <!-- ※コンバージョンタグなどは、こちらのページにのみ設置することが多いです -->
 	<script>
-(function acsTrack(){
-var PV = "pi30vzghokmc";
-var _ARGSV = "成果識別子";
-var KEYS = {cid : ["CL_", "ACT_", "cid_auth_get_type"], plid : ["PL_", "APT_", "plid_auth_get_type"]};
-var turl = "https://fullness.work/track.php?p=" + PV + "&args=" + _ARGSV;
-var cks = document.cookie.split("; ").reduce(function(ret, s){ var kv = s.split("="); if(kv[0] && kv[1]) ret[kv[0]] = kv[1]; return ret; }, []);
-turl = Object.keys(KEYS).reduce(function(url, k){ var vk = KEYS[k][0] + PV; var tk = KEYS[k][1] + PV; var v = "", t = ""; if(cks[vk]){ v = cks[vk]; if(cks[tk]) t = cks[tk]; }else if(localStorage.getItem(vk)){ v = localStorage.getItem(vk); t = "ls"; } if(v) url += "&" + k + "=" + v; if(t) url += "&" + KEYS[k][2] + "=" + t; return url; }, turl);
-var xhr = new XMLHttpRequest(); xhr.open("GET", turl); xhr.send(); })();
-</script>
+    (function acsTrack(){
+    var PV = "pi30vzghokmc";
+    
+    // --- ▼▼▼ ここを修正しました ▼▼▼ ---
+    // ユニークなIDを生成（例：現在時刻 + 5桁のランダム文字列）
+    var uniqueId = 'cv_' + Date.now().toString(36) + Math.random().toString(36).substring(2, 7);
+    var _ARGSV = uniqueId;
+    // --- ▲▲▲ ここまで修正しました ▲▲▲ ---
+
+    var KEYS = {cid : ["CL_", "ACT_", "cid_auth_get_type"], plid : ["PL_", "APT_", "plid_auth_get_type"]};
+    var turl = "https://fullness.work/track.php?p=" + PV + "&args=" + _ARGSV;
+    var cks = document.cookie.split("; ").reduce(function(ret, s){ var kv = s.split("="); if(kv[0] && kv[1]) ret[kv[0]] = kv[1]; return ret; }, []);
+    turl = Object.keys(KEYS).reduce(function(url, k){ var vk = KEYS[k][0] + PV; var tk = KEYS[k][1] + PV; var v = "", t = ""; if(cks[vk]){ v = cks[vk]; if(cks[tk]) t = cks[tk]; }else if(localStorage.getItem(vk)){ v = localStorage.getItem(vk); t = "ls"; } if(v) url += "&" + k + "=" + v; if(t) url += "&" + KEYS[k][2] + "=" + t; return url; }, turl);
+    var xhr = new XMLHttpRequest(); xhr.open("GET", turl); xhr.send(); })();
+    </script>
 
     <style>
         body { font-family: sans-serif; text-align: center; padding: 40px; }
@@ -33,6 +39,7 @@ var xhr = new XMLHttpRequest(); xhr.open("GET", turl); xhr.send(); })();
     <div class="container">
         <h1>お申し込みありがとうございました</h1>
         <p>サンクスページです。コンバージョンタグのテストなどにご利用ください。</p>
+        <p>（成果IDは毎回自動で生成されます）</p>
         <br>
         <a href="index.html">トップページに戻る</a>
     </div>
