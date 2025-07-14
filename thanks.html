@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>お申し込みありがとうございました</title>
     
-    <!-- ★CSSファイルを読み込み -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Google Tag Manager -->
@@ -21,18 +20,18 @@
     (function acsTrack(){var PV="pi30vzghokmc";var uniqueId='cv_'+Date.now().toString(36)+Math.random().toString(36).substring(2,7);var _ARGSV=uniqueId;var KEYS={cid:["CL_","ACT_","cid_auth_get_type"],plid:["PL_","APT_","plid_auth_get_type"]};var turl="https://fullness.work/track.php?p="+PV+"&args="+_ARGSV;var cks=document.cookie.split("; ").reduce(function(ret,s){var kv=s.split("=");if(kv[0]&&kv[1])ret[kv[0]]=kv[1];return ret;},[]);turl=Object.keys(KEYS).reduce(function(url,k){var vk=KEYS[k][0]+PV;var tk=KEYS[k][1]+PV;var v="",t="";if(cks[vk]){v=cks[vk];if(cks[tk])t=cks[tk];}else if(localStorage.getItem(vk)){v=localStorage.getItem(vk);t="ls";}if(v)url+="&"+k+"="+v;if(t)url+="&"+KEYS[k][2]+"="+t;return url;},turl);var xhr=new XMLHttpRequest();xhr.open("GET",turl);xhr.send();})();
     </script>
 </head>
-<body>
+<body style="background-color: var(--light-bg-color);">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZXRSR24"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <div class="container" style="padding: 80px 20px; text-align: center;">
-        <h1 style="color: #198754;">お申し込みありがとうございました！</h1>
-        <p>お客様のご注文を受け付けました。</p>
-        <p>商品の到着まで、今しばらくお待ちくださいませ。</p>
+    <div class="container" style="padding: 100px 20px; text-align: center; max-width: 700px;">
+        <div style="font-size: 4rem; color: var(--accent-color);">✓</div>
+        <h1 style="color: var(--primary-color); font-size: 2.5rem; margin-bottom: 20px;">お申し込み、誠にありがとうございました。</h1>
+        <p style="font-size: 1.1rem; line-height: 1.8;">お客様のご注文を確かに受け付けました。<br>商品の発送準備が整い次第、ご登録のメールアドレスにご連絡いたします。<br>ご到着まで、今しばらくお待ちくださいませ。</p>
         <br>
-        <a href="index.html" class="cta-button" style="background-color: #6c757d;">トップページに戻る</a>
+        <a href="index.html" class="cta-button" style="background: var(--primary-color); box-shadow: 0 5px 20px rgba(26, 58, 107, 0.4);">トップページに戻る</a>
     </div>
 </body>
 </html>
